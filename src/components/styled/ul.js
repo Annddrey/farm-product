@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 const gridList = css`
   display: grid;
@@ -12,7 +12,7 @@ const gridList = css`
 export const Ul = styled.ul`
   margin: 0;
   padding: 0;
-  ${(props) => (props.isGridList ? gridList : "")}
+  ${(props) => (props.isGridList ? gridList : '')}
 `;
 
 export default Ul;

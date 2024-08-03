@@ -1,8 +1,8 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
-import { StyledLink } from "./styled";
-import { AppRoute } from "/src/const";
-import Button from "/src/components/ui/button/button";
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+import { StyledLink } from './styled';
+import { AppRoute } from '/src/const';
+import Button from '/src/components/ui/button/button';
 
 const buttons = [
   {

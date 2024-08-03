@@ -1,15 +1,15 @@
-import React from "react";
-import Title, { TitleSize, TitleLevel } from "/src/components/ui/title/title";
+import React from 'react';
+import Title, { TitleSize, TitleLevel } from '/src/components/ui/title/title';
 import {
   StyledCard,
   CardHeader,
   StyledProvider,
-  StyledText,
-} from "./styled.js";
+  StyledText
+} from './styled.js';
 
-const Providers = {
-  FARM: "farm",
-  SHOP: "shop",
+export const Providers = {
+  FARM: 'farm',
+  SHOP: 'shop',
 };
 
 function FeatureCard({ image, title, text, provider }) {
@@ -18,23 +18,23 @@ function FeatureCard({ image, title, text, provider }) {
   switch (provider) {
     case Providers.FARM:
       options = {
-        bgCard: "#E1EDCE",
-        bgTitle: "#88AA4D",
-        text: "Фермерские продукты",
+        bgCard: '#E1EDCE',
+        bgTitle: '#88AA4D',
+        text: 'Фермерские продукты',
       };
       break;
     case Providers.SHOP:
       options = {
-        bgCard: "#F8DDD7",
-        bgTitle: "#F75531",
-        text: "Магазинные продукты",
+        bgCard: '#F8DDD7',
+        bgTitle: '#F75531',
+        text: 'Магазинные продукты',
       };
       break;
     default:
       options = {
-        bgCard: "#f0f0f0",
-        bgTitle: "#dadada",
-        text: "default",
+        bgCard: '#f0f0f0',
+        bgTitle: '#dadada',
+        text: 'default',
       };
   }
 

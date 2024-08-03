@@ -1,8 +1,8 @@
-import React from "react";
-import logo from "/src/assets/logo.svg";
-import { AppRoute } from "/src/const";
-import { useLocation } from "react-router-dom";
-import { StyledLink, StyledText } from "./styled";
+import React from 'react';
+import logo from '/src/assets/logo.svg';
+import { AppRoute } from '/src/const';
+import { useLocation } from 'react-router-dom';
+import { StyledLink, StyledText } from './styled';
 
 function Logo() {
   return useLocation().pathname === AppRoute.MAIN ? (

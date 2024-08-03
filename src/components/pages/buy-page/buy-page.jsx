@@ -1,16 +1,14 @@
-import React, { useState } from "react";
-import FormSection from "/src/components/blocks/form-section/form-section";
-import ProductSection from "/src/components/blocks/products-section/products-section";
+import React, { useState } from 'react';
+import FormSection from '/src/components/blocks/form-section/form-section';
+import ProductSection from '/src/components/blocks/products-section/products-section';
 
-import { StyledPage } from "./styled";
+import { StyledPage } from './styled';
 
 function BuyPage({ products }) {
   const [swiperRef, setSwiperRef] = useState(null);
   const arrayCheckboxesStates =
     products?.length &&
-    products.map(() => {
-      return useState(false);
-    });
+    products.map(() => useState(false));
 
   const selectedProducts = [];
   products.forEach((product, i) => {

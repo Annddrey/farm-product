@@ -1,6 +1,6 @@
-import React from "react";
-import Logo from "/src/components/ui/logo/loge";
-import { StyledFooter, StyledCopyright } from "./styled";
+import React from 'react';
+import Logo from '/src/components/ui/logo/loge';
+import { StyledFooter, StyledCopyright } from './styled';
 
 function Footer() {
   return (

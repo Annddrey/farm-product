@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Section } from "/src/components/styled";
+import styled from 'styled-components';
+import { Section } from '/src/components/styled';
 
 export const StyledFeatures = styled(Section)`
   display: flex;

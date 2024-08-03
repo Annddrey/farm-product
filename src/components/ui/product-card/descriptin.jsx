@@ -1,5 +1,5 @@
-import React from "react";
-import { StyledDescription } from "./styled";
+import React from 'react';
+import { StyledDescription } from './styled';
 
 function Description({ text, className }) {
   return <StyledDescription className={className}>{text}</StyledDescription>;

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const StyledMain = styled.main`
   width: ${(props) => props.theme.pageWidth};

@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import Title from "/src/components/ui/title/title";
-import { Ul } from "/src/components/styled";
+import styled from 'styled-components';
+import Title from '/src/components/ui/title/title';
+import { Ul } from '/src/components/styled';
 
 export const TabsWrapper = styled(Ul)`
   display: flex;

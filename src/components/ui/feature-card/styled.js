@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { P } from "/src/components/styled";
+import styled from 'styled-components';
+import { P } from '/src/components/styled';
 
 export const StyledCard = styled.article`
   padding: ${(props) => props.theme.intend};

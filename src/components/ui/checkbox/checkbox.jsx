@@ -1,5 +1,5 @@
-import React from "react";
-import { VisuallyHiddenInput } from "/src/components/styled";
+import React from 'react';
+import { VisuallyHiddenInput } from '/src/components/styled';
 
 function Checkbox({
   checkboxCompanent,

@@ -1,8 +1,8 @@
-import styled, { css } from "styled-components";
-import Button from "/src/components/ui/button/button";
-import { P } from "/src/components/styled";
-import tickImage from "/src/assets/tick.svg";
-import { Swiper, SwiperSlide } from "swiper/react";
+import styled, { css } from 'styled-components';
+import Button from '/src/components/ui/button/button';
+import { P } from '/src/components/styled';
+import tickImage from '/src/assets/tick.svg';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const stylesForChecked = css`
   background-position: center;
@@ -54,9 +54,9 @@ export const StyledCheckbox = styled.span`
     border-radius: 3px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background-color: ${(props) =>
-      props.$checked ? props.theme.bgButtonColor : props.theme.colorGray};
+    props.$checked ? props.theme.bgButtonColor : props.theme.colorGray};
     box-sizing: border-box;
-    ${(props) => (props.$checked ? stylesForChecked : "")}
+    ${(props) => (props.$checked ? stylesForChecked : '')}
   }
 `;
 

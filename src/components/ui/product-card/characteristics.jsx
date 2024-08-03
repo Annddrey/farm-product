@@ -1,54 +1,54 @@
-import React from "react";
-import { StyledList, StyeldListText, ListItem } from "./styled";
+import React from 'react';
+import { StyledList, StyeldListText, ListItem } from './styled';
 
 function Characteristics({ characteristics }) {
   return (
     <StyledList>
       {characteristics.weight && (
         <ListItem>
-          {"Масса: "}
+          {'Масса: '}
           <StyeldListText>{characteristics.weight} кг.</StyeldListText>
         </ListItem>
       )}
       {characteristics.quality && (
         <ListItem>
-          {"Качество: "}
+          {'Качество: '}
           <StyeldListText>{characteristics.quality}</StyeldListText>
         </ListItem>
       )}
       {characteristics.cooking && (
         <ListItem>
-          {"Применение: "}
+          {'Применение: '}
           <StyeldListText>{characteristics.cooking}</StyeldListText>
         </ListItem>
       )}
       {characteristics.important && (
         <ListItem>
-          {"Важно: "}
+          {'Важно: '}
           <StyeldListText>{characteristics.important}</StyeldListText>
         </ListItem>
       )}
       {characteristics.shelfLife && (
         <ListItem>
-          {"Срок годности: "}
+          {'Срок годности: '}
           <StyeldListText>{characteristics.shelfLife}</StyeldListText>
         </ListItem>
       )}
       {characteristics.packageing && (
         <ListItem>
-          {"Упаковка: "}
+          {'Упаковка: '}
           <StyeldListText>{characteristics.packageing}</StyeldListText>
         </ListItem>
       )}
       {characteristics.storgeConditions && (
         <ListItem>
-          {"Условия хранения: "}
+          {'Условия хранения: '}
           <StyeldListText>{characteristics.storgeConditions}</StyeldListText>
         </ListItem>
       )}
       {characteristics.origin && (
         <ListItem>
-          {"Место происхождения: "}
+          {'Место происхождения: '}
           <StyeldListText>{characteristics.origin}</StyeldListText>
         </ListItem>
       )}

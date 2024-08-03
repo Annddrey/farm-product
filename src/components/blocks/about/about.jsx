@@ -1,6 +1,6 @@
-import React from "react";
-import Title, { TitleSize } from "/src/components/ui/title/title";
-import { StyledAbout, StyledText } from "./styled";
+import React from 'react';
+import Title, { TitleSize } from '/src/components/ui/title/title';
+import { StyledAbout, StyledText } from './styled';
 
 function About() {
   return (

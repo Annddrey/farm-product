@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { TitleLevel, TitleSize } from "/src/components/ui/title/title";
+import React, { useState } from 'react';
+import { TitleLevel, TitleSize } from '/src/components/ui/title/title';
 import {
   StyledArticle,
   ImageWrapper,
@@ -7,26 +7,26 @@ import {
   StyledTitle,
   Wrapper,
   StyledTab,
-  Price,
-} from "./styled";
-import Description from "./descriptin";
-import Characteristics from "./characteristics";
-import Features from "./features";
-import Tabs from "/src/components/ui/tabs/tabs";
+  Price
+} from './styled';
+import Description from './descriptin';
+import Characteristics from './characteristics';
+import Features from './features';
+import Tabs from '/src/components/ui/tabs/tabs';
 
 function ProductCard({ product }) {
   const [activeTab, setActiveTab] = useState(0);
   const tabs = [
     {
-      title: "Описание",
+      title: 'Описание',
       content: <Description text={product.description} />,
     },
     {
-      title: "Характеристики",
+      title: 'Характеристики',
       content: <Characteristics characteristics={product.specs} />,
     },
     {
-      title: "Свойства",
+      title: 'Свойства',
       content: (
         <Features
           features={{
@@ -53,7 +53,7 @@ function ProductCard({ product }) {
           activeTab={activeTab}
           onChange={(tabIndex) => setActiveTab(tabIndex)}
         />
-        {tabs[activeTab].title === "Описание" && (
+        {tabs[activeTab].title === 'Описание' && (
           <Price>{`${product.price} руб. / ${product.specs.weight}`}</Price>
         )}
       </Wrapper>

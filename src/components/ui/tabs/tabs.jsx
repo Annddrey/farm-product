@@ -1,7 +1,7 @@
-import React from "react";
-import { TitleLevel } from "/src/components/ui/title/title";
-import { TabsWrapper, StyledTitle } from "./styled";
-import { Li } from "/src/components/styled";
+import React from 'react';
+import { TitleLevel } from '/src/components/ui/title/title';
+import { TabsWrapper, StyledTitle } from './styled';
+import { Li } from '/src/components/styled';
 
 function Tabs({ tabs, tabComponent, activeTab, onChange }) {
   const TabComponent = tabComponent;

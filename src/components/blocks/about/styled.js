@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import aboutImage from "/src/assets/about.svg";
-import { Section, P } from "/src/components/styled";
+import styled from 'styled-components';
+import aboutImage from '/src/assets/about.svg';
+import { Section, P } from '/src/components/styled';
 
 export const StyledAbout = styled(Section)`
   padding: 183px 553px 183px ${(props) => props.theme.pagePadding};

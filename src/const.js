@@ -1,4 +1,4 @@
 export const AppRoute = {
-  MAIN: "/",
-  ORDER: "/order",
+  MAIN: '/',
+  ORDER: '/order',
 };

@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import Title, { TitleSize, TitleLevel } from "/src/components/ui/title/title";
-import { Ul, Li } from "/src/components/styled";
-import Checkbox from "/src/components/ui/checkbox/checkbox";
+import React, { useState } from 'react';
+import Title, { TitleSize, TitleLevel } from '/src/components/ui/title/title';
+import { Ul, Li } from '/src/components/styled';
+import Checkbox from '/src/components/ui/checkbox/checkbox';
 import {
   Wrapper,
   SectionWrapper,
@@ -10,8 +10,8 @@ import {
   Price,
   ValuePrice,
   StyledLabelForProducts,
-  StyeldButton,
-} from "./styled";
+  StyeldButton
+} from './styled';
 
 function FormSection({
   products,
@@ -20,7 +20,7 @@ function FormSection({
   onLabelClick = () => {},
   fullPrice,
 }) {
-  const [addressInputValue, setAddressInputValue] = useState("");
+  const [addressInputValue, setAddressInputValue] = useState('');
 
   return (
     <Wrapper>
@@ -65,7 +65,7 @@ function FormSection({
           }}
         />
         <Price>
-          {"Цена: "}
+          {'Цена: '}
           <ValuePrice>{fullPrice} руб.</ValuePrice>
         </Price>
 
@@ -74,8 +74,8 @@ function FormSection({
           onClick={() => {
             window.alert(
               `Выбранные продукты:\n${selectedProducts.join(
-                "\n"
-              )}\n\nАдрес: ${addressInputValue}\n\nЦена: ${fullPrice} руб.`
+                '\n',
+              )}\n\nАдрес: ${addressInputValue}\n\nЦена: ${fullPrice} руб.`,
             );
           }}
         >

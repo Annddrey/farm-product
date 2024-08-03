@@ -1,9 +1,9 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
-import Header from "/src/components/layout/header/header";
-import Footer from "/src/components/layout/footer/footer";
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import Header from '/src/components/layout/header/header';
+import Footer from '/src/components/layout/footer/footer';
 
-import { StyledMain } from "./styled";
+import { StyledMain } from './styled';
 
 function PageWrapper() {
   return (

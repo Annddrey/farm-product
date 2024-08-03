@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Swiper } from "swiper/react";
+import styled from 'styled-components';
+import { Swiper } from 'swiper/react';
 
 export const StyledSwiper = styled(Swiper)`
   .swiper-slide {

@@ -1,7 +1,7 @@
-import styled, { css } from "styled-components";
-import Title from "/src/components/ui/title/title";
-import { P } from "/src/components/styled";
-import { Ul, Li } from "/src/components/styled";
+import styled, { css } from 'styled-components';
+import Title from '/src/components/ui/title/title';
+import { P } from '/src/components/styled';
+import { Ul, Li } from '/src/components/styled';
 
 export const StyledArticle = styled.article`
   display: grid;
@@ -59,9 +59,9 @@ export const StyledTab = styled.button`
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
   border-radius: 3px;
-  color: ${(props) => (props.$active ? "#ffffff" : "inherit")};
+  color: ${(props) => (props.$active ? '#ffffff' : 'inherit')};
   background-color: ${(props) =>
-    props.$active ? "#88AA4D" : props.theme.colorGray};
+    props.$active ? '#88AA4D' : props.theme.colorGray};
   transition: background-color 0.3s, box-shadow 0.3s;
   animation: tick 0.2s ease-in-out;
 

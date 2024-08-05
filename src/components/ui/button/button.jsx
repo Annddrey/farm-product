@@ -8,6 +8,7 @@ const Button = styled(Link)`
   min-width: 260px;
   max-width: 600px;
   min-height: 60px;
+  width: ${(props) => props.width}px;
   padding: 15px 20px;
   font-size: inherit;
   font-weight: 700;

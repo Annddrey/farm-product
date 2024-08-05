@@ -6,6 +6,7 @@ export const StyledCard = styled.article`
   min-height: 197px;
   box-sizing: border-box;
   border-radius: 6px;
+  max-width: 510px;
 `;
 
 export const CardHeader = styled.header`

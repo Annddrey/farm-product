@@ -4,7 +4,7 @@ import {
   StyledCard,
   CardHeader,
   StyledProvider,
-  StyledText
+  StyledText,
 } from './styled.js';
 
 export const Providers = {
@@ -12,30 +12,19 @@ export const Providers = {
   SHOP: 'shop',
 };
 
-function FeatureCard({ image, title, text, provider }) {
-  let options;
+function FeatureCard({ image, title, description, provider, isNegative }) {
+  let options = {
+    bgCard: '#E1EDCE',
+    bgTitle: '#88AA4D',
+    text: 'Фермерские продукты',
+  };
 
-  switch (provider) {
-    case Providers.FARM:
-      options = {
-        bgCard: '#E1EDCE',
-        bgTitle: '#88AA4D',
-        text: 'Фермерские продукты',
-      };
-      break;
-    case Providers.SHOP:
-      options = {
-        bgCard: '#F8DDD7',
-        bgTitle: '#F75531',
-        text: 'Магазинные продукты',
-      };
-      break;
-    default:
-      options = {
-        bgCard: '#f0f0f0',
-        bgTitle: '#dadada',
-        text: 'default',
-      };
+  if (isNegative) {
+    options = {
+      bgCard: '#F8DDD7',
+      bgTitle: '#F75531',
+      text: 'Магазинные продукты',
+    };
   }
 
   return (
@@ -44,14 +33,14 @@ function FeatureCard({ image, title, text, provider }) {
         <img src={image} alt={title} />
         <div>
           <StyledProvider style={{ backgroundColor: options.bgTitle }}>
-            {options.text}
+            {provider}
           </StyledProvider>
           <Title size={TitleSize.VERY_SMALL} level={TitleLevel.H3}>
             {title}
           </Title>
         </div>
       </CardHeader>
-      <StyledText>{text}</StyledText>
+      <StyledText>{description}</StyledText>
     </StyledCard>
   );
 }
